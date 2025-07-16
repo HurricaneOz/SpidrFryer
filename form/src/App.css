@@ -1,0 +1,111 @@
+:root {
+  --primary: rgba(71, 157, 175, 0.9);
+  --primary-solid: rgb(71, 157, 175);
+  --background: #0a0a0a;
+  --form-bg: #121212;
+  --input-bg: #1a1a1a;
+  --text: #ffffff;
+  --hover: rgba(71, 157, 175, 0.7);
+  --placeholder: rgba(255, 255, 255, 0.4);
+}
+
+/* Center the form container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--background);
+  padding: 2rem;
+  color: var(--text);
+}
+
+/* Style the form itself */
+.form {
+  background-color: var(--form-bg);
+  color: var(--text);
+  max-width: 500px;
+  width: 100%;
+  padding: 2rem;
+  border: 2px solid var(--primary);
+  border-radius: 12px;
+  box-shadow: 0 0 20px var(--primary);
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Form Title */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--background);
+  padding: 2rem;
+  color: var(--text);
+}
+
+/* Center title and form together */
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title styling without stretching it */
+.form-title {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+/* Row for side-by-side inputs */
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Label styling */
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  color: var(--text);
+}
+
+/* Input fields */
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  background-color: var(--input-bg);
+  border: 1px solid var(--primary);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.form-input::placeholder {
+  color: var(--placeholder);
+}
+
+/* Submit button */
+.form-submit {
+  width: 100%;
+  background-color: var(--primary-solid);
+  color: var(--background);
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-submit:hover {
+  background-color: var(--hover);
+}
+
+
