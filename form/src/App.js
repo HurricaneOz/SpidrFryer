@@ -102,7 +102,7 @@ export default function App() {
             name="spidrPin"
             value={formData.spidrPin}
             onChange={handleChange}
-            placeholder="####-####-s####-####"
+            placeholder="####-####-####-####"
             className="form-input pin-input"
             required
           />
